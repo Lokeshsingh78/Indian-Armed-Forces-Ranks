@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Armed Forces Ranks</title>
+    <link rel="icon" type="image/png" href="assets/AllDefence.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+        <header class="main-header">
+            <div class="header-logo">
+                <img src="assets/Emblem.png" alt="Indian Emblem" id="mainLogo">
+            </div>
+            <div class="header-text">
+                <h1>Indian Armed Forces Ranks & Insignia</h1>
+                <p>Decoding the Honor and Hierarchy of the Indian Army, Indian Air Force, and Indian Navy</p>
+            </div>
+        </header>
+        <div class="forces-nav">
+            <button class="force-btn army-btn active" data-force="army">
+                <div class="force-logo">
+                    <img src="assets/IndianArmy.png" alt="Army Logo" class="branch-logo">
+                </div>
+                <span>Indian Army</span>
+            </button>
+            <button class="force-btn airforce-btn" data-force="airforce">
+                <div class="force-logo">
+                    <img src="assets/Indian_Air_Force.png" alt="Air Force Logo" class="branch-logo">
+                </div>
+                <span>Indian Air Force</span>
+            </button>
+            <button class="force-btn navy-btn" data-force="navy">
+                <div class="force-logo">
+                    <img src="assets/Indian_Navy.png" alt="Navy Logo" class="branch-logo">
+                </div>
+                <span>Indian Navy</span>
+            </button>
+        </div>
+        <main class="main-content">
+            <div class="branch-description" id="branchDescription">
+                <!-- Branch description will be loaded here -->
+            </div>
+            <div class="ranks-container" id="ranksContainer">
+                <!-- Ranks will be loaded here -->
+            </div>
+        </main>
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal" id="rankModal">
+                <div class="modal-header">
+                    <h2 class="modal-title">
+                        <img src="" alt="Insignia" class="modal-insignia" id="modalInsignia">
+                        <span id="modalTitle">Rank Title</span>
+                    </h2>
+                    <button class="modal-close" id="modalClose">×</button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Rank details will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="rank-navigation-btn" id="prevRankBtn">
+                        <span>Previous Rank</span>
+                    </button>
+                    <button class="rank-navigation-btn" id="nextRankBtn">
+                        <span>Next Rank</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-container">
+                <img src="assets/AllDefence.png" class="footer-logo" alt="Indian Armed Forces Logo">
+                <div class="footer-content">
+                    <p>Dedicated to the valor of the Indian Armed Forces 🇮🇳 | Designed by <strong>Lokesh Singh Tanwar❤️</strong></p>
+                    <p>© 2025 Indian Armed Forces Information Portal | All Rights Reserved</p>
+                    <div class="official-links">
+                        <a href="https://indianarmy.nic.in/" target="_blank">Indian Army</a> | 
+                        <a href="https://indianairforce.nic.in/" target="_blank">Indian Air Force</a> | 
+                        <a href="https://www.joinindiannavy.gov.in/" target="_blank">Indian Navy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>        
+    </div>
+</body>
+</html>
