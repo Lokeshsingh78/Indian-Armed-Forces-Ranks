@@ -912,3 +912,14 @@ document.querySelectorAll('.force-btn').forEach(button => {
         }
     });
 });
+document.querySelectorAll(".force-btn").forEach(button => {
+    button.addEventListener("click", (event) => {
+        event.preventDefault();
+        let mainContent = document.querySelector(".main-content");
+        let navHeight = document.querySelector(".forces-nav").offsetHeight;
+        
+        let targetScroll = mainContent.getBoundingClientRect().top + window.scrollY - navHeight;
+        
+        window.scrollTo({ top: targetScroll, behavior: "smooth" });
+    });
+});
